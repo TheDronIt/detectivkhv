@@ -1,0 +1,393 @@
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: #111111;
+    font-family: Inter;
+    color: white;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: InterBold;
+    src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: InterExtraLight;
+    src: url(../fonts/Inter-ExtraLight.ttf);
+}
+section
+{
+    margin: 80px 0 160px 0;
+}
+hr
+{
+    max-width: 50%;
+    size:  2px;
+    color:  white;
+    margin-bottom: 40px;
+}
+.wrapper
+{
+    margin: auto;
+    max-width: 1100px;
+    min-height: 95vh;
+    font-size: 1.8rem;
+}
+.button
+{
+    padding: 9px 30px;
+    border-radius: 5px;
+    background-color: #25252C;
+    color: white;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 2px 2px #4B4B4B;
+    font-family: Inter;
+}
+.button:hover
+{
+    background-color: #373740;
+    box-shadow: 0 0 6px 2px #313131;;
+}
+.section-title
+{
+    font-family: InterBold;
+    font-size: 2.5rem;
+    color:  white;
+    text-align: center;
+}
+.page-way
+{
+    margin-top: 60px;
+    font-size: 1.55rem;
+    color: #B4B4B4;
+}
+.page-way a:hover
+{
+    color: white;
+    font-weight: bold;
+}
+.page-title
+{
+    margin: 10px 0 50px 0;
+    font-size: 2.5rem;
+    font-family: InterBold;
+}
+
+
+
+
+.big-banner
+{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/detect.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.big-banner_about
+{
+    font-family: InterExtraLight;
+    width: 600px;
+    margin: auto;
+}
+.big-banner_about__name
+{
+    display: block;
+    font-size: 2.5rem;
+    font-family: InterBold;
+    margin-bottom: 8px;
+}
+
+.big-banner_statistic
+{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 130px);
+    justify-content: center;
+    grid-column-gap: 50px;
+    font-size: 1.6rem;
+}
+.big-banner_statistic_el_name
+{
+    margin-bottom: 10px;
+}
+.big-banner_statistic_el img
+{
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+}
+.service__container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 270px);
+    margin-top: 40px;
+    justify-content: space-between;
+    grid-row-gap: 30px;
+}
+.service_el
+{
+    width: 215px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #1a1a1f;
+    padding: 20px;
+    color: white;
+    transition-duration: 0.3s;
+}
+.service_el:hover
+{
+    box-shadow: 0 0 4px 2px white;
+}
+.service_el img
+{
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+}
+.service_el__title
+{
+    font-family: InterBold;
+    font-size: 2rem;
+    margin-bottom: 8px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.service_el__description
+{
+    color: #CFCFCF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+.service_el__link
+{
+    display: block;
+    margin-top: 25px;
+    color: #CFCFCF;
+    text-align: center;
+}
+.service_el__link:hover
+{
+    text-decoration: underline;
+}
+
+
+.index-about
+{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 50px;
+}
+.index-about__title
+{
+    font-family: InterBold;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.index-about_help .index-about__title
+{
+    text-align: center;
+}
+.index-about_help
+{
+    border: 2px solid white;
+    padding: 20px 60px;
+    width: 200px;
+}
+
+
+.not-doing__container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px); 
+    color: white;
+    justify-content: space-between;
+}
+.not-doing_el
+{
+    display: grid;
+    text-align: center;
+}
+.not-doing_el img
+{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.document_el
+{
+    margin-bottom: 35px;
+}
+.document_el__title
+{
+    font-family: InterBold;
+    font-size: 2.2rem;
+}
+.document_el_button
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.contacts__container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+}
+.contacts_info, .contacts_links
+{
+    min-height: 200px;
+    padding: 22px;
+}
+.contacts__container div
+{
+    background-color: #1a1a1f;
+}
+.contacts_map
+{
+    height: 400px;
+    grid-column: 1/3;
+}
+.contacts_info_el
+{
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: white;
+}
+.contacts_info_el__name
+{
+    display: block;
+    font-size: 1.8rem;
+    font-family: InterBold;
+    margin-bottom: 5px;
+}
+.contacts_info_el__phone
+{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 7px;
+}
+.contacts_info_el__date-info
+{
+    display: block;
+    font-size: 1.4rem;
+    color: #C5C5C5;
+}
+.contacts_links
+{
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    grid-template-rows: repeat(auto-fit, 35px);
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+}
+.contacts_link__icon
+{
+    width: 100%;
+    height: 100%;
+}
+.contacts_link__name
+{
+    display: flex;
+    align-items: center;
+}
+.contacts_link__name:hover
+{
+    text-decoration: underline;
+    color: #C5C5C5;
+}
+
+
+.about-service__container
+{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+.about-service_image
+{
+    height: 253px;
+}
+.about-service_info
+{
+    display: grid;
+    grid-template-rows: 1fr 45px 40px;
+}
+.about-service_info__name
+{
+    font-family: InterBold;
+    font-size: 2.6rem;
+}
+.about-service_info__button
+{
+    display: flex;
+    justify-content: end;
+}
+.about-service_info__about
+{
+    grid-column: 1/3;
+}
+.about-service_info__about__headline
+{
+    display: block;
+    margin-bottom: 7px;
+    font-family: InterBold;
+    font-size: 2rem;
+}
+
+.thanks__container
+{
+    text-align: center;
+    max-width: 555px;
+    margin: 150px auto 0 auto;
+}
+.thanks_big-text
+{
+    font-family: InterBold;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+.service_el__mobile
+{
+    display: none;
+}
+.service_el
+{
+    display: block;
+}

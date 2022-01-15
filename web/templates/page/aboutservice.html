@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>ДЕТЕВТИВ ХАБАРОВСК</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="Description" content="Частное детективное агество в г. Хабаровск">
+    <meta name="Keywords" content="Meta Keywords"> 
+    <meta property="og:title" content="Детектив Хабаровск" /> 
+    <meta property="og:description" content="Частное детективное агество в г. Хабаровск" /> 
+    <meta property="og:image" content="{% static 'web/img/detect.jpg' %}" />
+    <link rel="icon" type="image/png" href="{% static 'web/img/logo.png ' %}" sizes="32x32">  
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/mobile.css' %}">
+</head>
+<body>
+{% block content %}
+	{% include 'include/nav.html' %}
+	<div class="wrapper">
+		<div class="page-way">
+			<a href="/">Главная</a> > <a href="/service">Услуги</a> > {{Service.Name}}
+		</div>
+		<div class="about-service__container">
+			<div class="about-service_image">
+				<img src="{{Service.Image.url}}">
+			</div>
+			<div class="about-service_info">
+				<div class="about-service_info__name">
+					{{Service.Name}}
+				</div>
+				<div class="about-service_info__price">
+					{% if Service.Price == 0 %}
+						Цена: по договоренности
+					{% else %}
+						Цена: от {{Service.Price}}
+					{% endif %}
+				</div>
+				<div class="about-service_info__button">
+					<a href="#aboutservice" class="button">Заказать</a>
+				</div>
+			</div>
+			<div class="about-service_info__about">
+				<a class="about-service_info__about__headline">Описание</a>
+				{{Service.About}}
+			</div>
+		</div>
+	</div>
+	{% include 'include/orderpopup.html' %}
+	{% include 'include/footer.html' %}
+{% endblock %}
+</body>
+</html>

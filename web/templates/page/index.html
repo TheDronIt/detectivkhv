@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>ДЕТЕВТИВ ХАБАРОВСК</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="Description" content="Частное детективное агество в г. Хабаровск">
+    <meta name="Keywords" content="Meta Keywords"> 
+    <meta property="og:title" content="Детектив Хабаровск" /> 
+    <meta property="og:description" content="Частное детективное агество в г. Хабаровск" /> 
+    <meta property="og:image" content="{% static 'web/img/detect.jpg' %}" />
+    <link rel="icon" type="image/png" href="{% static 'web/img/logo.png ' %}" sizes="32x32">  
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/mobile.css' %}">
+</head>
+<body>
+{% block content %}
+	{% include 'include/nav.html' %}
+	<div class="big-banner">
+		<div class="big-banner_about">
+			<a class="big-banner_about__name">Частное детективное агество</a>
+			В Хабаровске. Индвидуальный подход, нужный результат, полная конфиденциальность.<br><br><br>
+			<a href="#contactus" class="button">Связаться с детективом</a>
+		</div>
+		<div class="big-banner_statistic">
+			<div class="big-banner_statistic_el">
+				<div class="big-banner_statistic_el_name">
+					Поиск людей
+				</div>
+				<img src="{% static 'web/img/icons/find-people.png' %}">
+			</div>
+			<div class="big-banner_statistic_el">
+				<div class="big-banner_statistic_el_name">
+					Наблюдение
+				</div>
+				<img src="{% static 'web/img/icons/eye.png' %}">
+			</div>
+			<div class="big-banner_statistic_el">
+				<div class="big-banner_statistic_el_name">
+					Выявление измены
+				</div>
+				<img src="{% static 'web/img/icons/no-love.png' %}">
+			</div>
+			<div class="big-banner_statistic_el">
+				<div class="big-banner_statistic_el_name">
+					Поиск имущества
+				</div>
+				<img src="{% static 'web/img/icons/property.png' %}">
+			</div>
+			<div class="big-banner_statistic_el">
+				<div class="big-banner_statistic_el_name">
+					Защита авторских прав
+				</div>
+				<img src="{% static 'web/img/icons/copyright.png' %}">
+			</div>
+			<div class="big-banner_statistic_el">
+				<div class="big-banner_statistic_el_name">
+					Услуги юристов
+				</div>
+				<img src="{% static 'web/img/icons/lawyer-service.png' %}">
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<section>
+			<div class="section-title">
+				Наши услуги
+			</div>
+			<hr>
+			<div class="service__container">
+				{% for Service in Service %}
+					{% include 'include/service-card.html' %}
+				{% endfor %}
+			</div>
+			<a href="/service" class="service_el__link">Все наши услуги</a>
+		</section>
+
+
+		<section>
+			<div class="section-title">
+				О детективном агенстве
+			</div>
+			<hr>
+			<div class="index-about">
+				<div class="index-about_we">
+					<div class="index-about__title">Это мы</div>
+					Мы - детективное агентство, состоящее из людей, которые преданны своему делу. В нашей команде опытные сотрудники, имеющие лицензии частных детективов У Вас проблема? Нужно собрать информацию? Найти человека? В этих вопросах мы разбираемся лучше других! Этим делом мы занимаемся на протяжении долгого времени и точно знаем, как решить Ваши проблемы.
+					<br><br>
+					Имея мощнейшей информационный ресурс, поэтому каждый клиент остается довольный полученным результатом.
+					<br><br>
+					Обратившись к нам, Вы можете быть уверены, что Ваш случай будет рассматриваться в строгой конфиденциальности и с соблюдением закона РФ. Имея большой жизненный опыт и обширные связи практически во всех кругах, мы решаем сложные ситуации в Вашу пользу!
+					<br><br>
+					Часто люди пытаются найти ответы на свои вопросы самостоятельно, но многие дела настолько сложны, что найти правильное решение трудно, для этого требуется холодный расчёт. Только взгляд на проблему со стороны поможет найти верное решение.
+					<br><br>
+					Доверьте свое дело профессионалам!
+				</div>
+				<div class="index-about_help">
+					<div class="index-about__title">Мы можем помочь</div>
+					У нас большой опыт в различных делах, начиная от простой работы с документами, заканчиавая тяжелыми поисками людей.
+					<br><br>
+					Мы умеем не только вести слежку и находить нужную информацию, но и проводить аналитическую работу, которая необходима для составления досье, компромата и решения личных вопросов.
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="section-title">
+				Мы не занимаемся!
+			</div>
+			<hr>
+			<div class="not-doing__container">
+				<div class="not-doing_el">
+					<img src="{% static 'web/img/icons/no-phone.png' %}">
+					Прослушкой телефонов
+				</div>
+				<div class="not-doing_el">
+					<img src="{% static 'web/img/icons/no-crack.png' %}">
+					Взломом и проникновением в объекты
+				</div>
+				<div class="not-doing_el">
+					<img src="{% static 'web/img/icons/no-cctv.png' %}">
+					Установкой камер скрытого видеонаблюдения
+				</div>
+				<div class="not-doing_el">
+					<img src="{% static 'web/img/icons/no-power.png' %}">
+					Силовыми методами достижения цели
+				</div>
+				<div class="not-doing_el">
+					<img src="{% static 'web/img/icons/no-crime.png' %}">
+					Помощью аферистам и мошенникам
+				</div>
+			</div>
+		</section>
+	</div>
+	{% include 'include/contactus.html' %}
+	{% include 'include/footer.html' %}
+{% endblock %}
+</body>
+</html>

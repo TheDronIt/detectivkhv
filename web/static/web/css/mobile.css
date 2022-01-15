@@ -1,0 +1,135 @@
+@media screen and (max-width: 980px){
+	.not-doing__container 
+	{
+		grid-template-columns: repeat(auto-fit, 150px);
+	}
+	.index-about
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		justify-content: center;
+	}
+	.wrapper
+	{
+		padding: 40px 20px
+	}
+	.index-about_help
+	{
+		margin: auto;
+		width: auto;
+	}
+	.index-about
+	{
+		grid-row-gap: 50px;
+	}
+	.big-banner {
+		font-size: 15px;
+	}
+	.big-banner_about
+	{
+		width: 80%;
+	}
+	.big-banner_statistic
+	{
+		grid-template-columns: repeat(auto-fit, 110px);
+		grid-column-gap: 15px;
+		grid-row-gap: 25px;
+		grid-template-rows: auto 1fr;
+		justify-content: center;
+	}
+	.service__container
+	{
+		grid-template-columns: auto auto;
+		grid-gap: 16px;
+		justify-content: center;
+	}
+
+	.not-doing__container
+	{
+		grid-row-gap: 50px;
+	}
+	.big-banner_statistic_el img
+	{
+		width: 40px;
+		height: 40px;
+	}
+	.contacts__container
+	{
+		grid-template-columns: 1fr;
+	}
+	.contacts_map
+	{
+		grid-column: 1/2;
+	}
+	.page-way
+	{
+		margin-top: 15px;
+	}
+	.contacts_info_el__phone
+	{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		margin-top: 14px;
+	}
+	.document_el__title
+	{
+		font-size: 1.8rem;
+	}
+	.big-banner {
+		height: 100vh;
+	}
+	.about-service__container
+	{
+		grid-template-columns: 1fr;
+	}
+	.about-service_info__about 
+	{
+    	grid-column: 1/2;
+	}
+	.popup_from__form 
+	{
+		width: 250px;
+	}
+	.popup__content 
+	{
+		margin: 0 20px;
+		min-width: 350px;
+	}
+	.service_el__mobile
+	{
+		width: 120px;
+		height: 175px;
+		border-radius: 5px;
+	    background-color: #1a1a1f;
+	    padding: 20px;
+	    color: white;
+	    transition-duration: 0.3s;
+	}
+	.service_el__title__mobile
+	{
+		font-size: 15px;
+		overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 8;
+	    -webkit-box-orient: vertical;
+	    font-size: 1.34rem;
+	}
+	.service_el__mobile img 
+	{
+		display: block;
+    	margin: 0 auto 10px auto;
+		width: 45px;
+		height: 45px;
+	}
+	.service_el
+	{
+		display: none;
+	}
+	.service_el__mobile
+	{
+		display: block;
+	}
+}
+

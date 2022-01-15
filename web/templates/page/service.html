@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>ДЕТЕВТИВ ХАБАРОВСК</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="Description" content="Частное детективное агество в г. Хабаровск">
+    <meta name="Keywords" content="Meta Keywords"> 
+    <meta property="og:title" content="Детектив Хабаровск" /> 
+    <meta property="og:description" content="Частное детективное агество в г. Хабаровск" /> 
+    <meta property="og:image" content="{% static 'web/img/detect.jpg' %}" />
+    <link rel="icon" type="image/png" href="{% static 'web/img/logo.png ' %}" sizes="32x32">  
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'web/css/mobile.css' %}">
+</head>
+<body>
+{% block content %}
+	{% include 'include/nav.html' %}
+	<div class="wrapper">
+		<div class="page-way">
+			<a href="/">Главная</a> > Услуги
+		</div>
+		<div class="page-title">
+			Наши услуги
+		</div>
+		<div class="service__container">
+			{% for Service in Service %}
+				{% include 'include/service-card.html' %}
+			{% endfor %}
+		</div>
+	</div>
+	{% include 'include/footer.html' %}
+{% endblock %}
+</body>
+</html>
