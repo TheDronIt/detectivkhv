@@ -18,6 +18,7 @@ CSRF_TRUSTED_ORIGINS = ['https://detectivkhv.ru']
 
 INSTALLED_APPS = [
     'web',
+    'django.contrib.sitemaps',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
